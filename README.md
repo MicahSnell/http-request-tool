@@ -32,11 +32,6 @@ To send multiple requests to a URL and track the statistics, add the
 ```
 Which will send 10 GET requests to example.com/
 
-## Sample Outputs
-Checkout the /screenshots directory for several different runs of the program! See WorkersLinks.png for the run against my Workers site from the General Assignment.
-
-## Conclusions
-This tool was a lot of fun to make, and I really enjoyed the challenge! Because my program sends HTTP requests, many servers returned a 301 status code because the page was moved to HTTPS and no longer responded with page content to HTTP requests. My Cloudflare Workers page performed much better than most other pages that respond to HTTP requests, with an average time of ~30ms! The only consistent exception that I found was [example.com](http://example.com/) (see `WorkersVsExample.png`).
-
-## References Used
-See [here](https://man7.org/linux/man-pages/man3/getaddrinfo.3.html) for the Linux manual page of `getaddrinfo` and see [here](https://man7.org/linux/man-pages/man2/gettimeofday.2.html) for the Linux manual page of `gettimeofday`
+## References
+1. The linux man page for [getaddrinfo](https://man7.org/linux/man-pages/man3/getaddrinfo.3.html) 
+2. The linux man page for [gettimeofday](https://man7.org/linux/man-pages/man2/gettimeofday.2.html)
